@@ -23,7 +23,7 @@ requirements:
     - toml
   run:
     - python >=3.8
-    - awkward >=1.10.1
+    - awkward >=2.0.0
     - dask >=2022.02.1
 
 test:
