@@ -1,11 +1,11 @@
-About dask-awkward
-==================
+About dask-awkward-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dask-awkward-feedstock/blob/main/LICENSE.txt)
 
 Home: https://dask-awkward.readthedocs.io/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dask-awkward-feedstock/blob/main/LICENSE.txt)
 
 Summary: Connecting awkward-array and Dask.
 
