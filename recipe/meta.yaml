@@ -40,7 +40,7 @@ about:
     dask-awkward provides a native Dask collection representing
     partitioned awkward arrays.
   doc_url: https://dask-awkward.readthedocs.io/
-  dev_url: https://github.com/ContinuumIO/dask-awkward/
+  dev_url: https://github.com/dask-contrib/dask-awkward/
 
 extra:
   recipe-maintainers:
