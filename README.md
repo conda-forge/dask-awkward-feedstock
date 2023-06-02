@@ -9,7 +9,7 @@ Package license: BSD-3-Clause
 
 Summary: Connecting awkward-array and Dask.
 
-Development: https://github.com/ContinuumIO/dask-awkward/
+Development: https://github.com/dask-contrib/dask-awkward/
 
 Documentation: https://dask-awkward.readthedocs.io/
 
