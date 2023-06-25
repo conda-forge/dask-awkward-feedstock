@@ -1,5 +1,5 @@
 {% set name = "dask-awkward" %}
-{% set version = "2023.6.2" %}
+{% set version = "2023.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dask_awkward/dask_awkward-{{ version }}.tar.gz
-  sha256: aca704131219cee37839977faa233a17a1d7937db10fe490947c58f19f8155fb
+  sha256: 6cd82f369cfe3013d5b1c4bc27d2b115792dac6a664d299f06d33784ca2df44a
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - toml
   run:
     - python >=3.8
-    - awkward >=2.2.1
+    - awkward >=2.2.4
     - dask >=2023.04.0
 
 test:
