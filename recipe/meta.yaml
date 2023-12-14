@@ -45,6 +45,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - username
     - agoose77
     - douglasdavis
     - martindurant
