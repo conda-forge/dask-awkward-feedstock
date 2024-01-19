@@ -45,6 +45,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jpivarski
     - lgray
     - agoose77
     - douglasdavis
