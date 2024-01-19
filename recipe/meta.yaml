@@ -1,5 +1,5 @@
 {% set name = "dask-awkward" %}
-{% set version = "2024.1.1" %}
+{% set version = "2024.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dask_awkward/dask_awkward-{{ version }}.tar.gz
-  sha256: 3dc564bf65116ad78453d04f3082c59d53a29ac84136a8557cd40a84f9990d8d
+  sha256: f9c454531d86b72b33498154f4d80e10dabd2125268d4147fc99bcdefdf04469
 
 build:
   noarch: python

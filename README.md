@@ -153,6 +153,7 @@ Feedstock Maintainers
 
 * [@agoose77](https://github.com/agoose77/)
 * [@douglasdavis](https://github.com/douglasdavis/)
+* [@jpivarski](https://github.com/jpivarski/)
 * [@lgray](https://github.com/lgray/)
 * [@martindurant](https://github.com/martindurant/)
 
