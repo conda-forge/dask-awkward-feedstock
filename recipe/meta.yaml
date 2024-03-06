@@ -1,5 +1,5 @@
 {% set name = "dask-awkward" %}
-{% set version = "2024.2.0" %}
+{% set version = "2024.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dask_awkward/dask_awkward-{{ version }}.tar.gz
-  sha256: fcedf49c526864fe161a520e4aa90a2a4f6becad18d3d4db58fc12aff98471ea
+  sha256: 66de31a731c4158ef00c5cec96616ec49a354309115e8cd1f05ed2351520d7d2
 
 build:
   noarch: python
@@ -25,7 +25,8 @@ requirements:
     - python >=3.8
     - awkward >=2.5.1
     - dask >=2023.04.0
-    - typing_extensions
+    - cachetools
+    - typing_extensions >=4.8.0
 
 test:
   imports:
