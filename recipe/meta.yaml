@@ -1,5 +1,6 @@
 {% set name = "dask-awkward" %}
 {% set version = "2024.11.0" %}
+{% set python_min "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -16,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling >=1.8.0
     - hatch-vcs
     - toml
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - awkward >=2.5.1
     - dask >=2023.04.0
     - cachetools
@@ -50,4 +51,5 @@ extra:
     - lgray
     - agoose77
     - douglasdavis
+    - pfackeldey
     - martindurant
