@@ -16,7 +16,6 @@ Documentation: https://dask-awkward.readthedocs.io/
 dask-awkward provides a native Dask collection representing
 partitioned awkward arrays.
 
-
 Current build status
 ====================
 

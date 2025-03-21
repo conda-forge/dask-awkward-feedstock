@@ -1,49 +1,54 @@
-{% set name = "dask-awkward" %}
-{% set version = "2025.2.0" %}
-{% set python_min = "3.8" %}
+schema_version: 1
+
+context:
+  name: dask-awkward
+  version: 2025.2.0
+  python_min: 3.8
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/d/dask_awkward/dask_awkward-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/dask_awkward/dask_awkward-${{ version }}.tar.gz
   sha256: 665df70be4f0394e8fa4ef50fcd80272f72cef6a4784e7f935e091d093d9aa2a
 
 build:
+  number: 1
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - hatchling >=1.8.0
     - hatch-vcs
     - toml
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - awkward >=2.5.1
     - dask >=2023.04.0
     - cachetools
     - typing_extensions >=4.8.0
 
-test:
-  imports:
-    - dask_awkward
+tests:
+  - python:
+      imports:
+        - dask_awkward
+      pip_check: true
 
+      python_version: ${{ python_min }}.*
 about:
-  home: https://dask-awkward.readthedocs.io/
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE
   summary: Connecting awkward-array and Dask.
   description: |
     dask-awkward provides a native Dask collection representing
     partitioned awkward arrays.
-  doc_url: https://dask-awkward.readthedocs.io/
-  dev_url: https://github.com/dask-contrib/dask-awkward/
+  homepage: https://dask-awkward.readthedocs.io/
+  repository: https://github.com/dask-contrib/dask-awkward/
+  documentation: https://dask-awkward.readthedocs.io/
 
 extra:
   recipe-maintainers:
