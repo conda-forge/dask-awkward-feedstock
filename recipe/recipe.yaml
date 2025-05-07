@@ -52,6 +52,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/scikit-hep
     - jpivarski
     - lgray
     - agoose77
