@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dask-awkward
-  version: "2025.3.0"
+  version: "2025.5.0"
   python_min: '3.9'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dask_awkward/dask_awkward-${{ version }}.tar.gz
-  sha256: b4839915be2ab79b0a11371b849d08c7c4ccff2350c20d524b11621ce9e350c8
+  sha256: 2e6e71562055b9b7eadaab5e66b23a78d23274487ebf38669bfd82e7346f3659
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - awkward >=2.5.1
-    - dask >=2023.04.0
+    - dask >=2023.04.0,<2025.4.0
     - cachetools
     - typing_extensions >=4.8.0
 
