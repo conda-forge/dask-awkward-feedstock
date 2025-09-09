@@ -7,7 +7,7 @@
 
 [project]
 name = "dask-awkward-feedstock"
-version = "3.48.1"  # conda-smithy version used to generate this file
+version = "3.52.1"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/dask-awkward-feedstock"
 authors = ["@conda-forge/dask-awkward"]
 channels = ["conda-forge"]
@@ -34,6 +34,7 @@ description = "List contents of dask-awkward-feedstock packages built for varian
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
+shellcheck = "*"
 [feature.smithy.tasks.build-locally]
 cmd = "python ./build-locally.py"
 description = "Build packages locally using the same setup scripts used in conda-forge's CI"
