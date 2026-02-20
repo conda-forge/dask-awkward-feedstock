@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: dask-awkward
   version: "2026.2.0"
-  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
@@ -28,7 +27,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - awkward >=2.5.1
-    - dask >=2023.04.0,<2025.4.0
+    - dask >=2025.3.1,<2025.4.0
+    - distributed >=2025.3.1,<2025.4.0
     - cachetools
     - typing_extensions >=4.8.0
 
