@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dask-awkward
-  version: "2025.9.0"
+  version: "2026.2.0"
   python_min: '3.9'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dask_awkward/dask_awkward-${{ version }}.tar.gz
-  sha256: 46712213abc0546bfd1941c4137ded185ade669a96ec6d0b6a2061219e802269
+  sha256: 24142baa536d769e089b198f5dc5320372f49c6612fc10d2a6fd8c7b446e2cd9
 
 build:
   number: 0
