@@ -26,7 +26,7 @@ requirements:
     - toml
   run:
     - python >=${{ python_min }}
-    - awkward >=2.5.1
+    - awkward >=2.8.12
     - dask >=2025.3.1,<2025.4.0
     - distributed >=2025.3.1,<2025.4.0
     - cachetools
